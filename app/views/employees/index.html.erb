@@ -1,12 +1,12 @@
 <h2>Employees</h2>
+<%= link_to "Add New Employee", new_employee_path(@employee) %>
 <ul>
 <% @employees.each do |employee| %>
   <br>Name: <%= link_to "#{employee.first_name} #{employee.last_name}", employee_path(employee) %>
   <br>Title: <%= employee.title %>
   <br>Office: <%= employee.office %>
-  <br>Dog: <%= employee.dog.name %>
+  <br>Dog: <%= link_to employee.dog.name, dog_path(employee.dog)%>
   <br><%= link_to "Edit", edit_employee_path(employee) %>
-  <br><%= button_to "Delete", employee_path(employee), method: :delete, data: {confirm: "Are you sure you want to delete this employee?"} %>
   <hr>
 <% end %>
 </ul>

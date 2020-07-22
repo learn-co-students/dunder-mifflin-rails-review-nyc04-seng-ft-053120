@@ -3,11 +3,11 @@ Breed:<% "#{@dog.breed}" %><br>
 Age:<% "#{@dog.age}" %><br>
 Owners:
   <ul>
-  <% @dog.employees.each do |employee| %>
-    Name: <% "#{employee.first_name} #{employee.last_name}" %><br>
-    Alias: <% "#{employee.alias}" %><br>
-    Title: <% "#{employee.title}" %><br>
-    Office: <% "#{employee.office}" %><br>
+  <% @owners.each do |owner| %>
+    Name: <% "#{owner.first_name} #{owner.last_name}" %><br>
+    Alias: <% "#{owner.alias}" %><br>
+    Title: <% "#{owner.title}" %><br>
+    Office: <% "#{owner.office}" %><br>
     <hr>
   <% end %>
   </ul>

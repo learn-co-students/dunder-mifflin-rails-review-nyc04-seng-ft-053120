@@ -6,6 +6,7 @@ class DogsController < ApplicationController
   end
 
   def show
+    @owners = @dog.employees
   end
 
   def new
