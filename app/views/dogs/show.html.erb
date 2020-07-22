@@ -1,0 +1,14 @@
+<h2> <% "#{@dog.name}" %></h2>
+Breed:<% "#{@dog.breed}" %><br>
+Age:<% "#{@dog.age}" %><br>
+Owners:
+  <ul>
+  <% @dog.employees.each do |employee| %>
+    Name: <% "#{employee.first_name} #{employee.last_name}" %><br>
+    Alias: <% "#{employee.alias}" %><br>
+    Title: <% "#{employee.title}" %><br>
+    Office: <% "#{employee.office}" %><br>
+    <hr>
+  <% end %>
+  </ul>
+<%= link_to 'Dogs', dogs_path %> | <%= link_to 'Employees', employees_path %>
