@@ -1,0 +1,5 @@
+<h1><%= @dog.name %></h1>
+<p>Age: <%= @dog.age %></p>
+<p>Breed: <%= @dog.breed %></p>
+
+<%= render partial: 'employees/employees', locals: { employees: @dog.employees } %>

@@ -1,0 +1,9 @@
+<h3>Employees</h3>
+<% employees.each do |employee| %>
+    <%= image_tag employee.img_url, size: "75x54" %><br>
+    <%= link_to employee.name, employee %><br>
+    <%= employee.title %>
+
+    <br><br>
+
+<% end %>
