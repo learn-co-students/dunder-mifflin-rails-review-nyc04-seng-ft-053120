@@ -1,0 +1,5 @@
+<h1><%= "#{@employee.first_name} \"#{@employee.alias}\" #{@employee.last_name}" %></h1>
+<p><%= @employee.title %>
+at <%= @employee.office %></p>
+
+<%= image_tag @employee.img_url, size: "190x108" %>
