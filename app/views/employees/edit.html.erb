@@ -1,0 +1,7 @@
+<h2>Edit Employee</h2>
+<%= render 'form' %>
+<br>
+<%= link_to 'Cancel Editing', @employee %>
+<br>
+<br>
+<%= button_to "Delete", employee_path(@employee), method: :delete, data: {confirm: "Are you sure you want to delete this employee?"} %>
