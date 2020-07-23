@@ -1,0 +1,9 @@
+<h1> All Employees! 🤓 </h1>
+
+<% @employees.each do |emp| %>
+    <%= link_to "#{emp.first_name} #{emp.last_name}", employee_path(emp) %><br>
+    <p>📸<br>
+    <img src="<%=emp.img_url%>" height=300 ></p>
+<% end %>
+
+

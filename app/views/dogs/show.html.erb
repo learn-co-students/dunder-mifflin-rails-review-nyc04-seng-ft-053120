@@ -1,0 +1,10 @@
+
+<h1><%= @dog.name %></h1>
+<p>Breed: <%= @dog.breed %></p>
+<p>Age: <%= @dog.age %></p>
+
+<h4>Employees:</h4>
+<%@dog.employees.each do |employee|%>
+    <%=employee.first_name %><br>
+    <%=employee.last_name %><br>
+<%end%> 
