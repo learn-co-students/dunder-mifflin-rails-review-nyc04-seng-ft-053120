@@ -1,0 +1,8 @@
+<h1>Dogs</h1>
+<p><a href="/dogs/new" class="btn btn-primary">Create a new Dog</a></p>
+
+<% @dogs.each do |dog| %>
+  <div>
+    <p><a href="/dogs/<%= dog.id %>"><%= dog.name %></a></p>
+  </div>
+<% end %>
