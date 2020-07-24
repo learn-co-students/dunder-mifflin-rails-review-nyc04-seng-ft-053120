@@ -1,0 +1,14 @@
+<h1> show page </h1>
+  <p>
+   Name: <%= @dog.name %>
+   </p>
+<h2> Employees </h2>
+  <ul>
+
+  <% @dog.employees.each do |employee| %>
+    <li>
+      <%= link_to employee.first_name, employee %>
+    </li>
+  <% end %>
+
+</ul>
