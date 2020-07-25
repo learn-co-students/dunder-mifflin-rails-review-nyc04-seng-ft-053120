@@ -1,0 +1,8 @@
+<h1><%= "#{@employee.first_name} #{@employee.last_name}" %></h1>
+<hr>
+<%= image_tag @employee.img_url,size: 200  %>
+<ul>
+<li><%=@employee.title %></li>
+<li><%=@employee.alias %></li>
+<li><%=@employee.office %></li>
+</ul>
